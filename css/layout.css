@@ -1,0 +1,151 @@
+/* layout */
+
+/* common */
+body{font-size: 14px; font-family: 'OTTOGISans','NanumGothic', Arial, sans-serif;}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #000;
+}
+
+/* font */
+@font-face {
+ font-family: 'OTTOGISans';
+ src: url(../fonts/OTTOGISans_Light.eot);
+ src: url(../fonts/OTTOGISans_Light.eot?#iefix) format('embedded-opentype'),
+      url(../fonts/OTTOGISans_Light.woff) format('woff'),
+      url(../fonts/OTTOGISans_Light.ttf) format('truetype');
+}
+
+/* font-family: 'NanumGothicLight';
+font-family: 'NanumGothic';
+font-family: 'NanumGothicBold';
+font-family: 'NanumGothicExtraBold'; */
+
+/* Mobile 크기 0~640 */
+@media screen and (max-width:640px){
+
+  /* layout */
+  #header{position: relative; width: 100%; height: 90px; z-index: 40;}
+  .header_wrap{position: absolute; left: 0; top: 0; width: 100%; height: 90px; background: #fef100;  transition: height 0.2s ease 0s;}
+    .header_inner{position: relative; width: 100%; height: 90px; margin: 0 auto;}
+  .main_visual{position: relative; width: 100%; height: 713px; z-index: 30;}
+  #container{width: 100%;}
+  .content1{width: 100%; margin: 111px auto 0; padding: 0 25px; box-sizing: border-box;}
+  .content2{width: 100%; margin: 212px auto 0}
+  .content3{width: 100%; margin: 97px auto 0;}
+  .content4{position: relative; width: 100%; margin-top: 111px; overflow: hidden;}
+  .content5{width: 100%; margin-top: 113px;}
+    .content5_inner{position: relative; width: 100%; margin: 0 auto;}
+  .content6{position: relative; width: 100%; margin: 145px auto 0;}
+  .content7{width: 100%; margin: 184px auto 186px;}
+
+  .spot{width: 100%; height: 430px; background: url(../images/visual_01.jpg)no-repeat 30% 0; background-size: cover;}
+  .spot_inner{width: 100%; margin: 0 auto;}
+.sub_navi{width: 100%; background-color: #dc2c34;}
+  .sub_navi_inner{width: 100%; margin: 0 auto;}
+#content{width: 100%;}
+  div.career_btn{width: 100%; border-bottom: 1px solid #ddd;}
+  div.career{width: 100%; margin: 24px auto 90px;}
+
+  div.comment{width: 100%; background: url(../images/counseling_bg.jpg)no-repeat 65% 170px; background-size: cover;}
+    .comments_inner{width: 100%; margin: 24px auto 0;}
+  div.comment_form{width: 100%; margin: 55px auto 70px; padding: 0 50px; box-sizing: border-box;}
+  div.procedure{width: 100%; background-color: #fafafa;}
+    .procedure_inner{width: 100%; margin: 0 auto;}
+  div.standard{width: 100%; margin: 75px auto 55px;}
+
+  #footer{position: relative; width: 100%; height: 216px;}
+  .footer_top{width: 100%; height: 62px; background-color: #f7f7f7; border-bottom: 1px solid #e4e4e4;}
+    .footer_top_inner{width: 100%;height: 62px; margin: 0 auto;}
+  .footer_bottom{width: 100%; height: 155px;}
+    .footer_bottom_inner{width: 100%; height: 155px; margin: 0 auto; padding-top: 20px;}
+      
+}
+
+/* Tablet 크기 641~1024 */
+@media screen and (min-width:641px) and (max-width:1024px){
+
+  /* layout */
+  #header{position: relative; width: 100%; height: 191px; z-index: 40;}
+    .header_wrap{position: absolute; left: 0; top: 0; width: 100%; height: 191px; background: #fff url(../images/header.png)repeat-x 0 0; transition: height 0.2s ease 0s; overflow: hidden;}
+      .header_inner{position: relative; width: 96%; min-width: 986px; height: 191px; margin: 0 auto; border: 1px solid transparent;}
+  .main_visual{position: relative; width: 100%; height: 713px; z-index: 30;}
+  #container{width: 100%;}
+    .content1{width: 96%; min-width: 986px; margin: 111px auto 0; padding: 0 25px; box-sizing: border-box;}
+    .content2{width: 96%; min-width: 986px; margin: 212px auto 0;}
+    .content3{width: 96%; min-width: 986px; margin: 97px auto 0;}
+    .content4{position: relative; width: 100%; margin-top: 111px; overflow: hidden;}
+    .content5{width: 100%; margin-top: 113px;}
+      .content5_inner{position: relative; width: 96%; min-width: 986px; margin: 0 auto;}
+    .content6{position: relative; width: 96%; min-width: 986px; margin: 145px auto 0;}
+    .content7{width: 96%; min-width: 986px; margin: 184px auto 186px;}
+
+    .spot{width: 100%; height: 430px; background: url(../images/visual_01.jpg)no-repeat 50% 0; background-size: cover;}
+    .spot_inner{width: 96%; min-width: 986px; margin: 0 auto;}
+  .sub_navi{width: 100%; background-color: #dc2c34;}
+    .sub_navi_inner{width: 96%; min-width: 986px; margin: 0 auto;}
+  #content{width: 100%;}
+    div.career_btn{width: 100%; border-bottom: 1px solid #ddd;}
+    div.career{width: 96%; min-width: 986px; margin: 24px auto 90px;}
+
+    div.comment{width: 100%; background: url(../images/counseling_bg.jpg)no-repeat 50% 170px; background-size: cover;}
+      .comments_inner{width: 96%; min-width: 986px; margin: 24px auto 0;}
+    div.comment_form{width: 96%; min-width: 986px; margin: 55px auto 70px; padding: 0 230px; box-sizing: border-box;}
+    div.procedure{width: 100%; background-color: #fafafa;}
+      .procedure_inner{width: 96%; min-width: 986px; margin: 0 auto;}
+    div.standard{width: 96%; min-width: 986px; margin: 75px auto 55px;}
+
+  #footer{position: relative; width: 100%; height: 216px;}
+    .footer_top{width: 100%; height: 62px; background-color: #f7f7f7; border-bottom: 1px solid #e4e4e4;}
+      .footer_top_inner{width: 96%; min-width: 986px; height: 62px; margin: 0 auto;}
+    .footer_bottom{width: 100%; height: 155px;}
+      .footer_bottom_inner{width: 96%; min-width: 986px; height: 155px; margin: 0 auto; padding-top: 20px;}
+
+}
+
+/* Pc 크기 1025~최대 */
+@media screen and (min-width:1025px){
+
+  /* layout */
+  #header{position: relative; width: 100%; height: 191px; z-index: 40;}
+    .header_wrap{position: absolute; left: 0; top: 0; width: 100%; height: 191px; background: #fff url(../images/header.png)repeat-x 0 0; transition: height 0.2s ease 0s; overflow: hidden;}
+      .header_inner{position: relative; width: 1201px; height: 191px; margin: 0 auto; border: 1px solid transparent;}
+  .main_visual{position: relative; width: 100%; min-width: 1024px; height: 713px; z-index: 30;}
+  #container{width: 100%;}
+    .content1{width: 1201px; margin: 111px auto 0; padding: 0 25px; box-sizing: border-box;}
+    .content2{width: 1201px; margin: 212px auto 0;}
+    .content3{width: 1201px; margin: 97px auto 0;}
+    .content4{position: relative; width: 100%; margin-top: 111px; overflow: hidden;}
+    .content5{width: 100%; margin-top: 113px;}
+      .content5_inner{position: relative; width: 1201px; margin: 0 auto;}
+    .content6{position: relative; width: 1201px; margin: 145px auto 0;}
+    .content7{width: 1201px; margin: 184px auto 186px;}
+
+    .spot{width: 100%; height: 430px; background: url(../images/visual_01.jpg)no-repeat 50% 0; background-size: cover;}
+      .spot_inner{width: 1201px; margin: 0 auto;}
+    .sub_navi{width: 100%; background-color: #dc2c34;}
+      .sub_navi_inner{width: 1201px; margin: 0 auto;}
+    #content{width: 100%;}
+      div.career_btn{width: 100%; border-bottom: 1px solid #ddd;}
+      div.career{width: 1201px; margin: 24px auto 90px; }
+
+      div.comment{width: 100%; background: url(../images/counseling_bg.jpg)no-repeat 50% 170px; background-size: cover;}
+        .comments_inner{width: 1201px; margin: 24px auto 0;}
+      div.comment_form{width: 1201px; margin: 55px auto 70px; padding: 0 230px; box-sizing: border-box;}
+      div.procedure{width: 100%; background-color: #fafafa;}
+        .procedure_inner{width: 1201px; margin: 0 auto;}
+      div.standard{width: 1201px; margin: 75px auto 55px;}
+      
+  #footer{position: relative; width: 100%; height: 216px;}
+    .footer_top{width: 100%; height: 62px; background-color: #f7f7f7; border-bottom: 1px solid #e4e4e4;}
+      .footer_top_inner{width: 1201px; height: 62px; margin: 0 auto;}
+    .footer_bottom{width: 100%; height: 155px;}
+      .footer_bottom_inner{width: 1201px; height: 155px; margin: 0 auto; padding-top: 20px;}
+
+}
